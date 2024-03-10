@@ -147,10 +147,82 @@ code -> output->
 
  ------------------------------------------------------------------------------                   
 
+VS code -> 
+
+-------------------------------------------------------------------------------
+array -> 
+
+    int a;//single value  
+    a=10; 
+    -----
+    -----
+    a=20; 
+    pf(a); 
+
+    //if you want to store n numbers of data items ? 
+    //array 
+    //  collection of same type of data 
+    //  continues memory allocation 
+    //  array access index 
+    //  index starts with 0 and ends with SIZE-1 
+    //  static memory 
+    int a[5];//5 copy  index 
+    // 0 1 2 3 4 
+
+    a[0]
+    a[1]
+    a[2]
+    a[3]
+    a[4]
+
+------------------------------------------------------------------
+function -> 
+
+    void add(){
+        a=10//sf : console 
+        b=20//sf : console 
+        c=a+b
+        pf(c)
+    }
+    void mul(int a,int b){
+        c=a*b
+        pf(c)
+    }
+
+    add() //call
+
+    mul(20,30) //call 
+    scanf -> x
+    scanf -> y 
+    mul(x,y)
+    //cohesion 
 
 
 
+    console -> 
+------------------------------------------------------------------------
 
+STACK -> array  
+
+LiFo --> Last In First Out 
+
+M.T :- x,y,z,a,b,c
+
+
+Plate Distribution 
+Book 
+Deck of Cards 
+
+Photo -> click -> display -> ? last 
+file download history --> 20GB 500GB 
+email ---> LiFo 
+whats app chat  ---> LiFo
+phone recent call ---> LiFo 
+notification  --> LiFo 
+history -> LiFo 
+ctrl + z -> 
+
+--------------------------------------------------------------------------------
 
 
 
