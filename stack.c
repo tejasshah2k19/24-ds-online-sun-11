@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include<stdlib.h> 
+#include <stdlib.h>
 #define SIZE 5
 int stack[SIZE];
 
 int top = -1; // empty
- 
+
 void push(int num)
 {
     if (top == SIZE - 1)
@@ -18,38 +18,72 @@ void push(int num)
     }
 }
 
-void display(){
-    int i; 
-    if(top == -1 ){
+void display()
+{
+    int i;
+    if (top == -1)
+    {
         printf("\nSTack UnderFlow");
-    }else{
+    }
+    else
+    {
         printf("\nElement(s) in the STACK\n");
-        for(i=top; i>=0 ;i--){
-            printf("\n%d",stack[i]);
+        for (i = top; i >= 0; i--)
+        {
+            printf("\n%d", stack[i]);
         }
     }
 }
 
-int main(){
+void pop()
+{
+    if (top == -1)
+    {
+        printf("\nStack UnderFlow");
+    }
+    else
+    {
+        printf("\n%d removed", stack[top]);
+        top--;
+    }
+}
+
+void peek()
+{
+    if (top == -1)
+    {
+        printf("\nStack UnderFlow");
+    }
+    else
+    {
+        printf("\n%d", stack[top]);
+    }
+}
+
+// peep -> hw 
+
+int main()
+{
 
     int choice;
-    int num; 
+    int num;
 
-    while(-1){ //0:false anynumber:true 
+    while (-1)
+    { // 0:false anynumber:true
         printf("\n0 For EXIT\n1 For PUSH\n2 For Display\nEnter your hoice");
-        scanf("%d",&choice); 
+        scanf("%d", &choice);
 
         switch (choice)
         {
         case 1:
             printf("\nEnter number ");
-            scanf("%d",&num); 
-            push(num); 
+            scanf("%d", &num);
+            push(num);
             break;
         case 2:
             display();
             break;
-        
+
         default:
             printf("\nInvalid choice");
             break;
@@ -58,9 +92,5 @@ int main(){
         }
     }
 
-
-    return 0; 
+    return 0;
 }
-
-
-
