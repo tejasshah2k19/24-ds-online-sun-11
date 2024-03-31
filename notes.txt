@@ -330,6 +330,49 @@ O(n)
 
 
 
+STACK -> LIFO 
+         add    -> PUSH
+         delete -> POP 
+
+linear search -> time complexity ? -> O(n)
+
+Big O -> upper bound -> worst case 
+
+
+10  20  30  40  50  60  70  80  90  100 
+
+search = 30 
+found 
+
+search = 300 
+not found 
+
+
+
+binary search -> 
+
+
+10  20  30  40  50  60  70  80  90  100 
+
+
+search = 20 
+found 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
