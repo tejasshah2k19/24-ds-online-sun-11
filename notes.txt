@@ -387,6 +387,13 @@ Bubble Sort ->
             complexity 
 
 
+----------------------------------------------------------------
+
+RECURSION -> function calling itself 
+
+        -> BASE CASE -> break -> stop 
+        
+
 
 
 
