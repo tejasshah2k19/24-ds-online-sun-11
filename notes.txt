@@ -394,6 +394,71 @@ RECURSION -> function calling itself
         -> BASE CASE -> break -> stop 
         
 
+--------------------------------------------------------------
+
+20  10  60  4   75  8   66  5   
+
+10  20  60  4   75  8   66  5
+
+Bubble sort -> swaping  LR 
+selection sort -> less swaping LR  
+
+insertion sort -> 
+
+20  10  60  4   75  8   66  5
+
+
+
+
+20  10  60  4   75  8   66  5   
+
+4  10  20  60   75  8   66  5
+           tmp=4 
+
+
+4   5   8  10   20  60  66  75
+                            i 
+                            tmp=5  
+j
+
+
+---------------------------------------------------------------------------------------
+
+bubble  -> left --> right -> compare swap 
+
+selection --> left --> right -> smallest find swap 
+
+insertion --> no ---> left -->
+ 
+
+4  10  20  60   75  8   66  5
+            i 
+j 
+tmp = 4
+
+for i=1;  i<SIZE ; i++ 
+    tmp = a[i]; //10 
+        for j=i-1 j>=0  j-- 
+            if a[j]  > tmp 
+                a[j+1] = a[j]; 
+            else 
+                break; 
+        a[j+1] = tmp ; 
+
+
+-----------------------------------------------------------------------------------------------
+
+Merge Sort :- 
+                a : [ 10 20 30 40 50 ] 
+                
+                b : [ 5 15 19 35 70  ]
+
+                c:  [ 5  10 15  19 20 30 35 40 50 70 ]
+
+
+
+
+
 
 
 
