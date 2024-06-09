@@ -456,14 +456,23 @@ Merge Sort :-
                 c:  [ 5  10 15  19 20 30 35 40 50 70 ]
 
 
+-----------------------------------------------------------------------------------------------
 
 
+Queue -> 
+            First In First Out 
+            First Come First Serve 
+
+ecom -> order -> 
+    50 product -> 55 order -> first 50 confirm 
 
 
-
-
-
-
+    1)  printer 
+    2)  call Center 
+    3)  Message Buffering 
+    4)  Resource allocation 
+    5)  Web Request 
+ 
 
 
 

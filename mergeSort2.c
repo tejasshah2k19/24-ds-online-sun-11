@@ -52,14 +52,13 @@ void mergeSort(int c[],int start,int mid,int end){//start:0  mid:4  end:9
 
 }
 
-void divide(int a[],int l,int r){//a 0 7 {a 0 3 {a 0 1 } {a 0 0} }
-                                    //   {a 4 7 {a 4 6}}
+void divide(int a[],int l,int r){// l:0 r:4 
     if(l<r){ //0 3 
-        int mid = (l+r)/2;//1
-        divide(a,l,mid);//0 1  
-        divide(a,mid+1,r); //4 7 
+        int mid = (l+r)/2;//m:2
+        divide(a,l,mid);//l:0 r:2  
+        divide(a,mid+1,r); //3 4 
+        mergeSort(a,l,mid,r); 
     }
-
 }
 
 int main(){
@@ -68,8 +67,15 @@ int main(){
 
     int start = 0;
     int end  = S-1; 
-    int mid = (start+end)/2; //4
+    int mid = (start+end)/2; //(0+9)/2 => 4 
 
-    mergeSort(c,start,mid,end);//5 8   
+    divide(c,start,end);//0,9   
+
+    
+    printf("\n=================Sorted array=================\n");
+    int i=0;
+    for(i=0;i<S;i++){
+        printf(" %d",c[i]);
+    }    
     return 0; 
 }
