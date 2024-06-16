@@ -25,7 +25,20 @@ void insert(int data){
 
 
 void remove(){
-
+    if(f==-1){
+        printf("\nQueue IS EMPTY");
+    }else if(f == r){
+        printf("\n%d removed",q[f]);
+        f=-1;
+        r=-1;
+    }
+    else if(f == S - 1){
+        printf("\n%d removed",q[f]);
+        f = 0;
+    } else{
+        printf("\n%d removed",q[f]);
+        f++;
+    }
 }
 
 
