@@ -474,14 +474,57 @@ ecom -> order ->
     5)  Web Request 
  
 
+10  20  30  
+F        R 
+
+R : insert 
+F : remove 
+
+-----------------------------------------------------------------------------------------------
+
+stack array Queue 
+
+HEXA DECIMAL :->
+0-9
+A-F
+
+    0x 
+    0X 
+
+STACK : QUEUE 
+
+
+enter the string 
+0xABC 
+valid 
+
+enter the string 
+0xABCDWF  
+Invalid
+
+enter the string 
+0x 
+Invalid 
+
+
+enter the string 
+0XAAA 
+valid
+
+enter the string 
+0xABC121212DFED 
+valid 
+
+ 
 
 
 
+0xABC121212DFED 
 
 
+0XAAA
 
 
+0x 
 
-
-
-
+0xABCDWF  
