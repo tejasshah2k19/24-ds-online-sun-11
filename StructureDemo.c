@@ -15,7 +15,8 @@ int main()
 {
 
     struct employee s[10];
-    int i;
+    int i,maxIndex;
+    int maxSalary;
 
     for (i = 0; i < 3; i++)
     {
@@ -33,5 +34,20 @@ int main()
         printf("\n %-20s%-20s%-6d%-6d", s[i].empName, s[i].department, s[i].basicSalary, s[i].salary);
     }
 
+    // highest salary paid : max salary
+    // rock : 55000
+    maxSalary = s[0].salary;
+    maxIndex = 0; 
+    for (i = 0; i < 3; i++)
+    {
+        if(maxSalary< s[i].salary){
+            maxSalary = s[i].salary;
+            maxIndex = i; 
+        }
+    }
+
+    printf("\nMaxSalary = %d",maxSalary);
+    printf("\nEmp Name = %s",s[maxIndex].empName);
+ 
     return 0;
 }
