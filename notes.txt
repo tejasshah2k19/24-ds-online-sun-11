@@ -528,3 +528,25 @@ valid
 0x 
 
 0xABCDWF  
+----------------------------------------
+
+employee name 
+department 
+basicSalary 
+salary {basicSalary+1500+hra{5%BS} - tax{10%bs} }
+
+
+print 
+
+
+data type  ? 
+
+structure -> collection of mix type of data 
+
+char empName[30];
+char department[30]; 
+int basicSalary;
+int hra;
+int tax; 
+int allowance;
+int salary; 
