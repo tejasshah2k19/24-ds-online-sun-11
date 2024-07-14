@@ -550,3 +550,16 @@ int hra;
 int tax; 
 int allowance;
 int salary; 
+------------------------------------------
+
+DMA 
+
+int x; //4 byte 
+
+
+malloc()-> single block of memory {4} , int , struct 
+calloc()-> same size n numbers of blocks {4,10} , array 
+
+free() -> release 
+
+stdlib.h -> prototype 
