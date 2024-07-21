@@ -563,3 +563,35 @@ calloc()-> same size n numbers of blocks {4,10} , array
 free() -> release 
 
 stdlib.h -> prototype 
+----------------------------------------------
+
+products 
+    productId 
+    name 
+    category 
+    qty
+    price
+    discountPercentage
+    rating 
+
+
+    
+    productId : 1  
+    name  : RedGear A15 
+    category : Mouse 
+    qty  : 100 
+    price : 750 
+    discountPercentage : 10 
+    rating : 4.5 
+
+    we only have 10 products max :- 
+
+    0. Exit 
+    1. Add Product
+    2. List All Products 
+    3. Search Product By Category  
+    4. Search Product By Id
+     
+
+
+
