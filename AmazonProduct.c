@@ -17,8 +17,14 @@ struct product
 int main()
 {
     int choice, i;
-    struct product p[SIZE]; // p[0] p[1]
-    int totalProducts;
+    // struct product p[SIZE]; // p[0] p[1]
+    struct product p[]={
+        {1,"iphone 15","phone",20,150000,10,5},
+        {2,"legion y 520","laptop",50,55000,15,4},
+        {3,"vivo v1","phone",100,20000,7,3},
+        
+    };
+    int totalProducts=3;
     while (1)
     {
         printf("\n0 For Exit\n1 For Add\n2 For List Products\n3 For Search Product By Category\n4 For Search Product By Id");
@@ -54,14 +60,14 @@ int main()
             break;
         case 2:
 
-            printf("\nProductId  Name  Category  Price Qty  DiscountPerc  Rating");
+            printf("\nProductId  Name         Category        Price     Qty    DiscountPerc  Rating");
             for (i = 0; i < totalProducts; i++)
             {
-                printf("\n %d %s %s %d %d %d %d", p[i].productId,p[i].name, p[i].category,p[i].price, p[i].qty,p[i].discountPercentage, p[i].rating);
+                printf("\n %-9d %-13s %-13s  %-6d    %-5d     %-13d %-5d", p[i].productId,p[i].name, p[i].category,p[i].price, p[i].qty,p[i].discountPercentage, p[i].rating);
             }
             // print all
             //format 
-            
+
 
         default:
             break;
