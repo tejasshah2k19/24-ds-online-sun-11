@@ -592,6 +592,71 @@ products
     3. Search Product By Category  
     4. Search Product By Id
      
+------------------------------------------------------------
 
+
+
+cards[]={12,34,56,78,97,97,43,200};//8 
+
+playerA[] = {12,56,97,43}
+
+playerB[] = {34,78,97,200}
+
+
+Battle 1: 
+    12,34 
+
+playerA[] = {56,97,43}
+
+playerB[] = {78,97,200}
+
+playerB Win the Battle 
+
+playerA[] = {56,97,43}
+
+playerB[] = {78,97,200,12,34}
+
+Battle 2:
+56,78
+
+playerA[] = {97,43}
+
+playerB[] = {97,200,12,34}
+
+playerB Won the Battle 
+
+playerA[] = {97,43}
+
+playerB[] = {97,200,12,34,56,78}
+
+
+
+Battle 3: 
+    97,97 
+
+playerA[] = {43}
+playerB[] = {200,12,34,56,78}
+
+Tie 
+
+
+Battle 4: 
+    43,200 
+playerA[] = {}
+playerB[] = {12,34,56,78}
+
+playerB Won Battle 
+
+playerA[] = {}
+playerB[] = {12,34,56,78,97,97,43,200}
+
+
+**********Player B Won The GAME**********
+
+max battle 100
+
+****GAME DRAW****
+
+----------------------------------------------------------------------------
 
 
