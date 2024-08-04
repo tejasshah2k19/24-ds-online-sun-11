@@ -51,9 +51,35 @@ void printCards()
     }
 }
 
+void shiftByOne(){
+    int i;
+
+    for(i=0;i<MASTER;i++){
+        playerA[i] = playerA[i+1];
+    }
+    
+    for(i=0;i<MASTER;i++){
+        playerB[i] = playerB[i+1];
+    }
+}
+void battle(int count){
+    int battle[MASTER] ; 
+    //playerA -> 0th index card remove -> store into battle array 
+    //shift array by minus-1 index 
+    battle[0] = playerA[0];//12 
+    //playerB -> 0th index card remove -> store into battle array 
+    battle[1] = playerB[0];//34
+
+    shiftByOne(); //playerA playerB  
+    printf("\nBattle : %d",count);
+    printCards(); 
+}
+
 int main()
 {
     distribute();
     printCards();
+    battle(1);
+    battle(2);
     return 0;
 }
