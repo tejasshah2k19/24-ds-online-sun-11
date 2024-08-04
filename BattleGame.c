@@ -36,8 +36,8 @@ void printCards()
     printf("\nPlayerA : ");
     for (i = 0; i < MASTER; i++)
     {
-        if(playerA[i] == 0 )
-            break;
+       // if(playerA[i] == 0 )
+           // break;
         printf(" %d", playerA[i]);
     }
     // playerB[] = {34,78,97,200}
@@ -45,8 +45,8 @@ void printCards()
     for (i = 0; i < MASTER; i++)
     {
         
-        if(playerB[i] == 0 )
-            break;
+      //  if(playerB[i] == 0 )
+         //   break;
         printf(" %d", playerB[i]);
     }
 }
@@ -54,13 +54,15 @@ void printCards()
 void shiftByOne(){
     int i;
 
-    for(i=0;i<MASTER;i++){
+    for(i=0;i<MASTER-1;i++){
         playerA[i] = playerA[i+1];
     }
+    playerA[i]=0;
     
-    for(i=0;i<MASTER;i++){
+    for(i=0;i<MASTER-1;i++){
         playerB[i] = playerB[i+1];
     }
+    playerB[i]=0;
 }
 void battle(int count){
     int battle[MASTER] ; 
