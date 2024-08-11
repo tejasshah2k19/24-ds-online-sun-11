@@ -660,3 +660,31 @@ max battle 100
 ----------------------------------------------------------------------------
 
 
+size fix -> 
+    predefine size -> 50 -> use 25 -> 50% loss ,
+    size->50->55 -> overflow 
+    logical release -> 
+
+Linked List -> 
+
+    dynamic list -> memory -> size limit ->  
+    when you want you allocte the memory -> 
+    5 items -> 5 node 
+    now you want only 4 itesm -> immediately we can relese memory -> 
+
+    we will store data item in node -> 
+    we create node in linked list -> 
+
+    node is divided in two part 
+            data | link {next}
+
+    data -> your data , num, name , student info , anything 
+    next -> address of next node , next item 
+
+
+    firstNode -> HEAD  -> this is the first node 
+    lastNode -> node -> next ->  NULL -> last node 
+
+    head,last 
+
+     
