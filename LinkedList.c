@@ -9,10 +9,17 @@ struct node
 void addNodeBeg(int num)
 {
     struct node *tmp = NULL;
-    tmp = malloc(sizeof(struct node));
-    tmp->data = num;
-    tmp->next = head;
-    head = tmp;
+    if (head == NULL)
+    {
+        addNode(num);
+    }
+    else
+    {
+        tmp = malloc(sizeof(struct node));
+        tmp->data = num;
+        tmp->next = head;
+        head = tmp;
+    }
 }
 
 void addNode(int num)
