@@ -13,7 +13,7 @@ void addNode(int num)
     if (head == NULL)
     {
         head = malloc(sizeof(struct node));
-        head->data = 10;
+        head->data = num;
         head->next = NULL;
         last = head;
     }
@@ -27,6 +27,42 @@ void addNode(int num)
         last = tmp;
     }
 }
+
+void display()
+{
+    struct node *i;
+    printf("\nElements in the linked list : ");
+    for (i = head; i != NULL; i = i->next)
+    {
+        printf(" %d",i->data);
+    }
+}
+
+void search(int key){
+
+    struct node *i; 
+    int found = 0;//not present - false 
+    for(i=head;i!=NULL;i=i->next){
+        if(i->data ==key){
+            found = 1; //present - true 
+            break;
+        }
+    }
+
+    if(found==1){
+        printf("\n%d Found",key);
+    }else{
+        printf("\n%d Not Found",key);
+    }
+}
+
+void sum(){
+    //sum of all elements in the linked list 
+}
+
+void max(){
+    //find out the max element from the linked list 
+}
 int main()
 {
 
@@ -35,7 +71,10 @@ int main()
     addNode(20);
     addNode(30);
     addNode(40);
-    
-    printf(" %d %d %d",head->data,head->next->data,head->next->next->data);
+
+    display();
+ 
+    search(25);//not found 
+    search(30);//found 
     return 0;
 }
