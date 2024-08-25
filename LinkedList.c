@@ -101,6 +101,22 @@ void deleteLast()
     free(last); // release memory
     last = p;
 }
+
+void deleteBeg()
+{
+    struct node *p;
+    if (head == NULL)
+    {
+        printf("\nList is Empty");
+    }
+    else
+    {
+        p = head;
+        head = head->next;
+        printf("\n%d removed ",p->data);
+        free(p);
+    }
+}
 int main()
 {
     int choice, num;
@@ -125,7 +141,7 @@ int main()
         {
         case 1:
             printf("\nEnter number");
-            scanf("%d", &num);
+            scanf("%d", &num); // 30 40 50
             addNode(num);
             break;
         case 2:
@@ -138,6 +154,9 @@ int main()
             break;
         case 7:
             display();
+            break;
+        case 5:
+            deleteBeg();
             break;
         case 0:
             exit(0);
