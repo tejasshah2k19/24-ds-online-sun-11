@@ -44,6 +44,39 @@ void addNode(int num)
     }
 }
 
+void addNodeAny(int source, int num)
+{
+    struct node *p;
+    struct node *tmp;
+    if (head == NULL)
+    {
+        printf("\nList is empty -- creating the first node");
+        addNode(num);
+    }
+    else
+    {
+
+        for (p = head; p != NULL; p = p->next)
+        {
+            if (p->data == source)
+            {
+                break;
+            }
+        }
+
+        if (p == NULL)
+        {
+            printf("\nInvalid Source");
+        }
+        else
+        {
+            tmp = malloc(sizeof(struct node));
+            tmp->data = num;
+            tmp->next = p->next;
+            p->next = tmp;
+        }
+    }
+}
 void display()
 {
     struct node *i;
@@ -113,13 +146,13 @@ void deleteBeg()
     {
         p = head;
         head = head->next;
-        printf("\n%d removed ",p->data);
+        printf("\n%d removed ", p->data);
         free(p);
     }
 }
 int main()
 {
-    int choice, num;
+    int choice, num,source;
     // 10
     while (101)
     {
@@ -158,6 +191,10 @@ int main()
         case 5:
             deleteBeg();
             break;
+        case 3:
+            printf("\nEnter the source and value :");
+            scanf("%d%d",&source,&num);
+            addNodeAny(source,num);
         case 0:
             exit(0);
         }
