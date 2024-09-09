@@ -687,4 +687,51 @@ Linked List ->
 
     head,last 
 
-     
+----------------------------------------------------------------------------------------
+
+
+1) single linkedlist 
+2) dobule linkedlist 
+3) circular linkedlist 
+
+
+
+10  ->  20  ->  30  ->  40  -> X 
+
+
+X <-10  <->  20  <->  30  <->  40  <-> X 
+
+single linkedlist -> 7 operation 
+dobule linkedlist -> 7+1 operation {reverse display}
+
+
+
+binary tree -> 
+    node 
+    root node 
+    leaf node 
+    sibling 
+    parent node 
+    child node 
+    height 
+    level 
+
+addnode 
+
+
+BST -> binary search tree 
+    1) i am a binary tree 
+    2) child node < parent node data -> left 
+    3) child node > parent node -> right 
+-----------------------------------------------------------------------------------
+
+74,53,69,51,48,71
+
+56,78,90,98,76,10,32,12,34,19,5,87,65,43,2,500
+
+25,84,12,36,55,10,69,18,6,40,90,85,98,75,20
+
+
+
+
+

@@ -4,6 +4,7 @@ struct node
 {
     int data;
     struct node *next; // long int
+    struct node *prev;
 } *head = NULL, *last = NULL;
 
 void addNodeBeg(int num)
@@ -31,6 +32,7 @@ void addNode(int num)
         head = malloc(sizeof(struct node));
         head->data = num;
         head->next = NULL;
+        head->prev = NULL; 
         last = head;
     }
     else
@@ -39,6 +41,7 @@ void addNode(int num)
         tmp = malloc(sizeof(struct node));
         tmp->data = num;
         tmp->next = NULL;
+        tmp->prev = last; 
         last->next = tmp;
         last = tmp;
     }
