@@ -735,3 +735,11 @@ BST -> binary search tree
 
 
 
+tree travesal :- 
+
+InOrder     -> left - root - right 
+PreOrder    -> root - left - right 
+PostOrder   -> left - right - root 
+
+
+-------------------------------------------------------------------------------------
