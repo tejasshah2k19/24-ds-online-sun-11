@@ -743,3 +743,35 @@ PostOrder   -> left - right - root
 
 
 -------------------------------------------------------------------------------------
+AVL : height balance tree 
+
+balance factor -> -1 0 1  { balanced }
+
+1) BST 
+2) BF|node| => -1  , 0 , 1 
+
+BF = LH - RH 
+
+what if node / tree is in imBalance ? 
+ans: rotate 
+    Left Rotation 
+    Right Rotation 
+
+1) RR imBalance {left rotate}
+2) LL imBalance {right rotate}
+3) LR imBalance {left rotate,right rotate}
+4) RL imBalance {right rotate,left rotate}
+
+------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
