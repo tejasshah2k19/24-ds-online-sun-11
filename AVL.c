@@ -180,11 +180,6 @@ int main()
     root = addNode(root, 50);
     root = addNode(root, 67);
     root = addNode(root, 40);
-    
-
-
-    
-    
 
     // RL
     //  root = addNode(root, 50);
